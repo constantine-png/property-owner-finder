@@ -1,0 +1,71 @@
+# Property Owner Finder — Privacy Policy
+
+**Last updated:** May 2026
+
+Property Owner Finder is a Chrome browser extension that helps real estate professionals find property owner contact information. This privacy policy explains exactly what data the extension handles and where that data goes.
+
+## Summary in one sentence
+
+Property Owner Finder does not collect, transmit, store on remote servers, sell, or share any of your data — everything stays in your local browser.
+
+## What the extension stores locally
+
+The extension uses Chrome's built-in `storage.local` API to remember the following between popup opens, on your device only:
+
+- Owner name, mailing address, and property address you've entered into the input fields
+- Notes and phone numbers you've added to the captured pad
+- A history of owner names you've searched (last 30 entries, with timestamps and source counts)
+
+This data is stored in your local Chrome profile and is never transmitted off your device by this extension.
+
+## What the extension reads from web pages
+
+When you click **Auto-extract from this page** or **Scan this page for phones**, the extension reads the visible text and link content of the active tab to find owner information and phone numbers. This data is:
+
+- Processed locally and immediately
+- Never stored beyond the current popup session
+- Never transmitted to any server
+- Never logged, analyzed, or shared
+
+The extension only reads the active tab when you explicitly click one of these buttons. It does not run in the background or read pages without your action.
+
+## Search URLs
+
+When you click any search button (Sunbiz, Google, TruePeopleSearch, FastPeopleSearch, ThatsThem, Whitepages, LinkedIn, Facebook), the extension opens a new tab to that search service with your owner name and city pre-filled in the URL. From that point, your browser interacts with the destination website directly. Those services have their own privacy policies, which you should review separately.
+
+The extension does not act as a proxy, log search queries, or transmit any data about searches you launch.
+
+## Permissions and why each is required
+
+| Permission        | Purpose                                                                |
+|-------------------|------------------------------------------------------------------------|
+| `activeTab`       | Read content from the current tab when you click Extract or Scan.      |
+| `scripting`       | Inject the extraction logic into the current page on demand.           |
+| `storage`         | Persist your inputs, captured notes, and search history locally.       |
+| `clipboardWrite`  | Power the one-click copy buttons on phone numbers and the captured pad.|
+
+The extension does not request `host_permissions` for any specific website. It cannot read pages unless you actively click a button while that page is open.
+
+## Third parties
+
+The extension does not use any third-party analytics, error reporting, advertising, telemetry, or tracking SDKs. There is no third-party service involved at any point.
+
+## Data sale
+
+The extension does not sell any data. There is no data being collected to sell.
+
+## Children's privacy
+
+The extension is intended for adult professional use (real estate, sales, research). It does not knowingly collect data from anyone and is not directed at children.
+
+## Changes to this policy
+
+If this policy ever changes, the new version will be posted here with an updated date. Material changes will also be noted in the extension's update notes on the Chrome Web Store.
+
+## Contact
+
+For questions, bug reports, or feature requests, please open an issue at:
+
+https://github.com/YOUR-USERNAME/property-owner-finder/issues
+
+(Replace YOUR-USERNAME with your actual GitHub handle once you've created the repo.)
